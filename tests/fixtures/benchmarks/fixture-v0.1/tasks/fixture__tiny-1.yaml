@@ -1,0 +1,33 @@
+instance_id: fixture__tiny-1
+schema_version: "0.1"
+repository:
+  owner: fixture
+  name: tiny
+  url: https://example.invalid/fixture/tiny
+base_commit: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+issue:
+  number: 1
+  title: "add() subtracts instead of adding"
+  body: |
+    `pkg.mathy.add` returns the wrong result for positive integers.
+
+    Expected: add(2, 3) == 5
+    Actual: add(2, 3) == -1
+environment:
+  dockerfile: Dockerfile
+  timeout_seconds: 60
+tests:
+  fail_to_pass:
+    - name: test_add
+      command: python -m pytest tests/test_add.py -q
+  pass_to_pass:
+    - name: test_mul
+      command: python -m pytest tests/test_mul.py -q
+gold:
+  fix_commit: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  patch_path: gold.patch
+metadata:
+  category: backend
+  difficulty: easy
+  verified: false
+  notes: Local fixture. Execution validation is Phase 4.

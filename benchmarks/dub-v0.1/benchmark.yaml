@@ -1,0 +1,10 @@
+# dub-v0.1
+id: dub-v0.1
+schema_version: "0.1"
+repository:
+  owner: dubinc
+  name: dub
+  url: https://github.com/dubinc/dub
+description: >
+  Repository-specific SWE-style benchmark for dub. Tasks are added manually in
+  Phase 7 after the harness and validator work. Mining is Phase 6.

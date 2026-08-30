@@ -1,0 +1,12 @@
+diff --git a/pkg/mathy.py b/pkg/mathy.py
+index 1111111..2222222 100644
+--- a/pkg/mathy.py
++++ b/pkg/mathy.py
+@@ -1,5 +1,5 @@
+ def add(a, b):
+-    return a - b  # intentional bug: subtraction instead of addition
++    return a + b
+ 
+ 
+ def mul(a, b):
+     return a * b

@@ -1,0 +1,7 @@
+id: fixture-v0.1
+schema_version: "0.1"
+repository:
+  owner: fixture
+  name: tiny
+  url: https://example.invalid/fixture/tiny
+description: Local fixture used by BenchForge tests. Not a published benchmark.
