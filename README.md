@@ -2,15 +2,15 @@
 
 Reproducible evaluation harness for AI coding models and coding agents on **real repository issues**.
 
-BenchForge is not a coding assistant. It measures whether a model can produce a patch that actually fixes a historical bug in an existing codebase, using maintainer tests as the ground truth.
+BenchForge is not a coding assistant—it measures whether a model can produce a patch that actually fixes a historical bug in an existing codebase, using maintainer tests as the ground truth.
 
-It is inspired by software-engineering benchmarks such as SWE-bench, with a narrower first goal: make **repository-specific** benchmark construction and evaluation straightforward. The first target corpus is [dub](https://github.com/dubinc/dub) (`dub-v0.1`).
+Inspired by software-engineering benchmarks such as SWE-bench, BenchForge has a narrower first goal: make **repository-specific** benchmark construction and evaluation straightforward. The first target corpus is [dub](https://github.com/dubinc/dub) (`dub-v0.1`).
 
 No model performance numbers are claimed yet. The harness that would produce them is not implemented in v0.1.
 
 ## Why this exists
 
-Leaderboard demos and chat transcripts are not evaluations. They are not pinned to a commit, they are not isolated, and they are easy to contaminate with the answer.
+Leaderboard demos and chat transcripts are not evaluations—they are not pinned to a commit, they are not isolated, and they are easy to contaminate with the answer.
 
 A coding model is useful in production only if it can:
 
@@ -152,9 +152,9 @@ Until Phase 2, `solve` is only exercised in unit tests (the mock adapter).
 
 ## Current status
 
-**BenchForge v0.1 (Phase 1).** Schemas, catalog, CLI inspect/validate, mock adapter, leakage tests, and a local fixture repository.
+**BenchForge v0.1 (Phase 1):** Schemas, catalog, CLI inspect/validate, mock adapter, leakage tests, and a local fixture repository.
 
-Not in this version: workspace checkout, patch apply, Docker evaluation, gold-patch validation, SQLite result store, metric aggregation, GitHub mining, or Dub tasks.
+Not yet in this version: workspace checkout, patch apply, Docker evaluation, gold-patch validation, SQLite result store, metric aggregation, GitHub mining, or Dub tasks.
 
 ## Roadmap
 
